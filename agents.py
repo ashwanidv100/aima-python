@@ -139,6 +139,7 @@ def RandomAgentProgram(actions):
 
 def SimpleReflexAgentProgram(rules, interpret_input):
     """This agent takes action based solely on the percept. [Figure 2.10]"""
+    return action
     def program(percept):
         state = interpret_input(percept)
         rule = rule_match(state, rules)
